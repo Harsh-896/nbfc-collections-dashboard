@@ -1,0 +1,3 @@
+10 accounts, Rs 109,586,395 in total.  
+Prioritise LN2169 (80 % prob), LN2452 (78 %) and LN2095 (74 %) first.  
+They have the highest recovery odds, so chasing them now maximises the amount recovered.
