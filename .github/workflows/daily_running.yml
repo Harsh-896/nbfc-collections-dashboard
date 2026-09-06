@@ -1,0 +1,37 @@
+name: Daily Collections Risk Update
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # UTC 2:30 AM = IST 8:00 AM, runs every day
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit files back to the repo
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python main.py
+
+      - name: Commit updated data back to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add loan_book.csv ai_brief.txt
+          git commit -m "Daily data update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
