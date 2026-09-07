@@ -1,3 +1,3 @@
-10 accounts, Rs 109,586,395 in total.  
-Prioritise LN2169 (80 % prob), LN2452 (78 %) and LN2095 (74 %) first.  
-They have the highest recovery odds, so chasing them now maximises the amount recovered.
+Ten accounts totaling ₹109,586,395 are high‑priority.  
+Start with LN1768 – 15 days overdue, 71 % recovery probability.  
+Next, tackle LN1249 (30 days, 66 %) and LN2886 (5 days, 63 %) to maximize early recovery.
