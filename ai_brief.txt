@@ -1,3 +1,3 @@
-1. There are 10 high‑priority overdue accounts totaling Rs 4,947,524.  
-2. Follow up first on LN2169, LN2452, LN2095, LN1768 and LN1584—they hold the highest recovery probabilities (80‑71 %).  
-3. Securing these loans delivers the biggest quick recoveries and reduces overall risk exposure.
+10 high‑priority accounts totaling Rs 109,586,395.  
+Prioritize LN2169 (80 % recovery prob) and LN2452 (78 %) first, as their high chances and zero overdue days mean quickest payoff.  
+Next tackle LN2095, LN1249, and LN1768 to balance probability with overdue days.
